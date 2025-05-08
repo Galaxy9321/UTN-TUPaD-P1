@@ -55,3 +55,46 @@ elif mode(numeros_aleatorios) == median(numeros_aleatorios) == mean(numeros_alea
     print("Sin sesgo")
     #print(numeros_aleatorios)
 
+#Ejercicio 7
+caracteres = input("Ingrese una frase o palabra: ")
+if caracteres[-1].lower() in "aeiou":
+    print(caracteres,"!")
+else:
+    print(caracteres)
+
+#Ejercicio 8
+nombre = input("Ingrese su nombre: ")
+print("1. Su nombre en mayuscula")
+print("2. Su nombre en minuscula")
+print("3. Su nombre con la primera letra en mayuscula")
+caso = input("Ingrese la opcion deseada: ")
+if caso == "1" or caso == "2" or caso == "3":
+    if caso == "1":
+        print(nombre.upper())
+    elif caso == "2":
+        print(nombre.lower())
+    elif caso == "3":
+        print(nombre.title())
+else:
+    print("Ingrese una opcion valida")
+
+#Ejercicio 9
+mag_terremoto = int(input("Ingrese la magnitud del terremoto: "))
+if mag_terremoto < 3:
+    print("Muy leve (Imperceptible)")
+
+elif mag_terremoto >= 3 and mag_terremoto < 4:
+    print("Leve (Ligeramente perceptible)")
+
+elif mag_terremoto >= 4 and mag_terremoto < 5:
+    print("Moderado (Sentido por personas, pero generalmente no causa daños)")
+
+elif mag_terremoto >= 5 and mag_terremoto < 6:
+    print("Fuerte (Puede causar daños en estructuras debiles)")
+
+elif mag_terremoto >= 6 and mag_terremoto < 7:
+    print("Muy fuerte (Puede causar danos significativos)")
+
+elif mag_terremoto >= 7:
+    print("Extremo (Puede causar graves danos a gran escala)")
+
