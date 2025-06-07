@@ -9,5 +9,5 @@ precios_frutas["Manzana"] = 1700
 precios_frutas["Melon"] = 2800
 
 #Lista sin precios:
-sin_precios = list(precios_frutas.keys())
-print(sin_precios)
+frutas_sin_precios = list(precios_frutas.keys())
+print(frutas_sin_precios)
